@@ -1,0 +1,116 @@
+/* * {
+    border: 1px solid red;
+} */
+li{
+    display: inline-flex;
+    justify-content: space-between;
+}
+h1 {
+    text-align: center;
+}
+
+.hangman-pic>* {
+    background: black;
+    position: absolute;
+
+}
+
+.hangman-pic {
+    width: 200px;
+    height: 300px;
+    margin: 0 auto;
+
+}
+
+.top-beam {
+    width: 100px;
+    height: 5px;
+    z-index: 1;
+    /* margin-right: 0; */
+}
+.rope{
+    width: 5px; 
+    height: 34px;
+    margin-left: 100px;
+    z-index: 2;
+}
+.pole {
+    width: 5px;
+    height: 300px;
+    z-index: 3;
+}
+.face{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-top: 30px;
+    margin-left: 73px;
+    background: white;
+    border: 5px solid black;
+}
+.body{
+    width: 5px;
+    height: 100px;
+    margin-top: 90px;
+    margin-left: 100px;
+}
+.left-arm{
+    width: 50px;
+    height: 5px;
+    margin-left: 60px;
+    margin-top: 125px;
+    transform: rotate(-45deg)
+}
+.left-leg{
+    width: 50px;
+    height: 5px;
+    margin-left: 60px;
+    margin-top: 200px;
+    transform: rotate(-45deg)
+}
+.right-arm{
+    width: 50px;
+    height: 5px;
+    margin-left: 95px;
+    margin-top: 125px;
+    transform: rotate(45deg)
+}
+.right-leg{
+    width: 50px;
+    height: 5px;
+    margin-left: 95px;
+    margin-top: 200px;
+    transform: rotate(45deg)
+}
+/* .victem{
+    display: none;
+} */
+.puzzle-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+}
+.puzzle-item{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 5px;
+    /* border-bottom: 3px solid black; */
+    margin: 0 8px;
+    
+
+}
+.puzzle-item > span{
+    font-size: xx-large;
+    /* color: white; */
+    user-select: none;
+}
+.underline{
+    background: black;
+}
+.letter{
+    min-width: 1em;
+}
+.clear{
+    display: none;
+}
