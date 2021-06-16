@@ -1,7 +1,15 @@
 /* * {
     border: 1px solid red;
 } */
-
+body{
+    background-image: url('./images/bkgrnd.png');
+    background-position: center;
+    background-size: cover;
+}
+.container{
+    margin: 0 auto;
+    max-width: 60%;
+}
 li {
     display: inline-flex;
     justify-content: space-between;
